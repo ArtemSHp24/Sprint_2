@@ -17,7 +17,6 @@ class PointsForMeters:
         points = 0
         if meters < 0:
             print(f"Количество метров не может быть отрицательным")
-            return 0
         else:
             points = meters * 0.5
         return points

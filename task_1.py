@@ -18,11 +18,8 @@ class ExtendedCase(Case):
         self.environment = str(environment)
 
     def print_test_case_info(self):
-        print(f"ID тест-кейса:  {self.test_case_id}"
-              f"\n Название: {self.name}"
-              f"\n Описание шага: {self.step_description}"
-              f"\n Ожидаемый результат: {self.expected_result}"
-              f"\n Предусловие: {self.precondition}"
+        super().print_test_case_info()
+        print(f"\n Предусловие: {self.precondition}"
               f"\n Окружение: {self.environment}")
               
 case = ExtendedCase('1', 
